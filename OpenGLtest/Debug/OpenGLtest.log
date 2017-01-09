@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\sdavoud\documents\visual studio 2015\projects\opengltest\opengltest\main.cpp(198): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\sdavoud\documents\visual studio 2015\projects\opengltest\opengltest\main.cpp(209): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\sdavoud\documents\visual studio 2015\projects\opengltest\opengltest\main.cpp(229): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  OpenGLtest.vcxproj -> C:\Users\sdavoud\Documents\Visual Studio 2015\Projects\OpenGLtest\Debug\OpenGLtest.exe
+  OpenGLtest.vcxproj -> C:\Users\sdavoud\Documents\Visual Studio 2015\Projects\OpenGLtest\Debug\OpenGLtest.pdb (Full PDB)
