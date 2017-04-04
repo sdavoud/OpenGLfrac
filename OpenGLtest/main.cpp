@@ -32,7 +32,7 @@ int main()
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "SherwinGL", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "CubeFracGL", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
 
 	// Set the required callback functions
@@ -46,7 +46,7 @@ int main()
 	// Define the viewport dimensions
 	glViewport(0, 0, WIDTH, HEIGHT);
 
-	//change to sha
+	//change to shader filepath on host computer
 	Shader fractshad("C:\\Users\\sdavoud\\Documents\\Visual Studio 2015\\Projects\\OpenGLtest\\OpenGLtest\\vertex.vs", "C:\\Users\\sdavoud\\Documents\\Visual Studio 2015\\Projects\\OpenGLtest\\OpenGLtest\\fragment.frag");
 	glEnable(GL_DEPTH_TEST);
 	
