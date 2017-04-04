@@ -46,7 +46,7 @@ int main()
 	// Define the viewport dimensions
 	glViewport(0, 0, WIDTH, HEIGHT);
 
-
+	//change to sha
 	Shader fractshad("C:\\Users\\sdavoud\\Documents\\Visual Studio 2015\\Projects\\OpenGLtest\\OpenGLtest\\vertex.vs", "C:\\Users\\sdavoud\\Documents\\Visual Studio 2015\\Projects\\OpenGLtest\\OpenGLtest\\fragment.frag");
 	glEnable(GL_DEPTH_TEST);
 	
@@ -111,49 +111,7 @@ int main()
 	glEnableVertexAttribArray(2);
 
 	glBindVertexArray(0); // Unbind VAO
-	//GLfloat vertices[] = {
-	//	0.9f,  0.9f, 0.0f,  // Top Right
-	//	0.9f, -0.9f, 0.0f,  // Bottom Right
-	//	-0.9f, -0.9f, 0.0f,  // Bottom Left
-	//	-0.9f,  0.9f, 0.0f   // Top Left 
-	//};
-	//GLuint indices[] = {  
-	//	0, 1, 3,  
-	//	1, 2, 3   
-	//};
-	//GLuint VBO, VAO, EBO;
-	//glGenVertexArrays(1, &VAO);
-	//glGenBuffers(1, &VBO);
-	//glGenBuffers(1, &EBO);
-	//glBindVertexArray(VAO);
-
-	//glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	//glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
-	//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
-	//glEnableVertexAttribArray(0);
-
-	//glBindBuffer(GL_ARRAY_BUFFER, 0); 
-
-	//glBindVertexArray(0);
-
-						  // Game loop
-	//GLuint quad_vao;
-	//glGenVertexArrays(1, &quad_vao);
-	//glBindVertexArray(quad_vao);
-	////// Position attribute
-	//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)0);
-	//glEnableVertexAttribArray(0);
-	//// Color attribute
-	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)(3 * sizeof(GLfloat)));
-	//glEnableVertexAttribArray(1);
-
-	//glBindVertexArray(0); // Unbind VAO
-	//create_quad(&quad_vao, 6);
-	// World space positions of our cubes
+	
 	glm::vec3 cubePositions[] = {
 		glm::vec3(0.0f,  0.0f,  0.0f),
 		glm::vec3(2.0f,  5.0f, -15.0f),
@@ -259,4 +217,3 @@ void create_quad(GLuint *quad_vao, int n)
 	glEnableVertexAttribArray(0);
 	glBindVertexArray(0);
 }
-
